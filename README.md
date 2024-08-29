@@ -1,12 +1,19 @@
-# Technical-assignment
-#Installing cypress 
---> Install Cypress via npm:
-cd /your/project/path
-npm install cypress --save-dev
--->To run the Cypress tests, use the following command:
-npx cypress open
-Can Access the installation guide through --> https://docs.cypress.io/guides/getting-started/installing-cypress
+## Technical Assignment
 
+### Installing Cypress
+
+--> Install Cypress via npm:
+
+cd /your/project/path
+
+npm install cypress --save-dev
+
+--> To run the Cypress tests, use the following command:
+
+npx cypress open
+
+Can Access the installation guide through:
+https://docs.cypress.io/guides/getting-started/installing-cypress
 ## Cypress Configuration Updates
 
 ### Memory Management Improvements
