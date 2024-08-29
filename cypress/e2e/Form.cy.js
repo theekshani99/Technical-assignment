@@ -50,7 +50,7 @@ describe('Test suit 1 for the form', () => {
   
   }) 
 
-    /*------ Verify the email feild------- */
+    /*------ Verify the email field------- */
 
 
   it('Verifies the email ', () => 
@@ -63,7 +63,7 @@ describe('Test suit 1 for the form', () => {
       cy.get('[data-test="submit"]').should('be.disabled');
 
       /*
-      // Enter spaces to the email feild and try to hit submit button
+      // Enter spaces to the email field and try to hit submit button
         cy.get('[data-test="form-email-input"]').type('    ');
       // Check that the submit button is still disabled
       cy.get('[data-test="submit"]').should('be.disabled');
@@ -71,7 +71,7 @@ describe('Test suit 1 for the form', () => {
 
   }) 
 
-  //Upon clearing the email feild and check the validation 
+  //Upon clearing the email field and check the validation 
   it('should show an alert when the email field is cleared after being filled', () =>
      {
 
@@ -111,7 +111,7 @@ it('Test case 1 - valid email, Test case 2 invalid email', () => {
           .should('be.visible')
     });
 
-    /*------ Verify the Input Number feild------- */
+    /*------ Verify the Input Number field------- */
 
   it('Should only accept numbers between 1 and 100 in the number field', () => {
 
@@ -125,7 +125,7 @@ it('Test case 1 - valid email, Test case 2 invalid email', () => {
     });
   
 
-    /* SHOWING AN ERROR ------ Verify the Date picker feild-------    */
+    /* SHOWING AN ERROR ------ Verify the Date picker field-------    */
 
     /*
     it.only('should select a year from the date picker', () => {
