@@ -147,7 +147,7 @@ it('Test case 1 - valid email, Test case 2 invalid email', () => {
       
 
     });
-    */
+  */
     
    /*  ------ Submitting the form with valid details 1 - Positive scenario -------    */
 
