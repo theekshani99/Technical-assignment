@@ -2,13 +2,14 @@
 
 ### Installing Cypress
 
-**--> Install Cypress via npm:**
+--> Install Cypress via npm:
 
-```bash
 cd /your/project/path
+
 npm install cypress --save-dev
 
 --> To run the Cypress tests, use the following command:
+
 npx cypress open
 
 Can Access the installation guide through:
