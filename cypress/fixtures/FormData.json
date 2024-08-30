@@ -1,0 +1,12 @@
+{   
+  "name-valid": "Theekshani Nathali Wickramasinghe",
+  "name-characters": "Theekshani@12$%^&*",
+
+  "email-type-1-valid": "theekshani.m@gmail.com",
+  "email-type-2-valid": "theekshani.m@yahoo.com",
+  "email-invalid":"theekshanigmail.com",
+
+  "number-valid-1": "50",
+  "number-valid-2": "80",
+  "number-invalid":"150"
+}

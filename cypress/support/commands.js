@@ -1,25 +1,26 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+// cypress/support/commands.js
+
+Cypress.Commands.add('fillName', (nameKey) => {
+    cy.fixture('FormData').then((data) => {
+      cy.get('[data-test="form-name-input"]').type(data[nameKey]);
+    });
+  });
+  
+  Cypress.Commands.add('fillEmail', (emailKey) => {
+    cy.fixture('FormData').then((data) => {
+      cy.get('[data-test="form-email-input"]').type(data[emailKey]);
+    });
+  });
+  
+  Cypress.Commands.add('fillNumber', (numberKey) => {
+    cy.fixture('FormData').then((data) => {
+      cy.get('[data-test="form-number-input"]').clear().type(data[numberKey]);
+    });
+  });
+  
+  Cypress.Commands.add('toggleSwitch', (shouldToggle = true) => {
+    if (shouldToggle) {
+      cy.get('[data-test="form-switch-input"]').click();
+    }
+  });
+  
